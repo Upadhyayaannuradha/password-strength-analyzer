@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Password Strength Analyzer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="card">
+
+            <h1>Password Strength Analyzer</h1>
+
+            <p class="subtitle">
+                Check how strong your password is.
+            </p>
+
+            <label for="password">
+                Enter Password
+            </label>
+
+            <div class="input-box">
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter your password"
+                >
+
+                <button id="toggleBtn">
+                    Show
+                </button>
+
+            </div>
+
+            <div class="strength-bar">
+                <div id="strengthFill"></div>
+            </div>
+
+            <h2 id="strengthText">
+                Password Strength: —
+            </h2>
+
+            <div class="checks">
+
+                <p id="length">
+                    ✗ At least 8 characters
+                </p>
+
+                <p id="upper">
+                    ✗ Contains uppercase letter
+                </p>
+
+                <p id="lower">
+                    ✗ Contains lowercase letter
+                </p>
+
+                <p id="number">
+                    ✗ Contains a number
+                </p>
+
+                <p id="special">
+                    ✗ Contains special character
+                </p>
+
+                <p id="unique">
+                    ✗ Not a common password
+                </p>
+
+            </div>
+
+            <div id="message" class="message">
+                Start typing to analyze your password.
+            </div>
+
+            <div id="suggestion" class="suggestion"></div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
